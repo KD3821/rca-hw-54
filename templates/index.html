@@ -2,9 +2,12 @@
 <html>
 <head>
     <title>Regular updates</title>
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet" />
 </head>
-<body>
+<body onload="getWebsocketConn()">
     <h1>Your creative idea</h1>
     <div id="events"></div>
+    <div id="boom">💥</div>
+    <script src="{{ url_for('static', path='/code.js')}}"></script>
 </body>
 </html>
